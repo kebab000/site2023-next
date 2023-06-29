@@ -8,23 +8,19 @@ const links = [
       url : '/intro',
     },{
       id: 2,
-      title : '멤버',
-      url : '/member',
-    },{
-      id: 3,
       title : '포트폴리오',
       url : '/port',
     },{
-      id: 4,
+      id: 3,
       title : '유튜브',
       url : '/youtube',
     }
     ,{
-      id: 5,
+      id: 4,
       title : '영화',
       url : '/movie',
     },{
-      id: 6,
+      id: 5,
       title : '이미지',
       url : '/unsplash'
     }
