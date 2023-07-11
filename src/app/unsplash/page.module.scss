@@ -1,11 +1,11 @@
-// movie__wrap
+// unsplash__wrap
 
-.movie__wrap {
+.unsplash__wrap {
     overflow: hidden;
 
-    .movie__inner {
-        height: 650px;
-        .movie__text {
+    .unsplash__inner {
+        height: 500px;
+        .unsplash__text {
             > h3 {
                 font-size: 50px;
                 font-weight: 400;
@@ -18,26 +18,26 @@
                 line-height: 1.5;
                 margin-bottom: 25px;
                }
-        
                > a {
                 border-radius: 50px;
                }
         }
        
-       .movie__item {
+       .unsplash__item {
             padding-top: 70px;
             display: flex;
             position: absolute;
             > div {
+                width: 400px;
                 margin-right: 27px;
-                width: 270px;
+
                
                 > a {
 
                     > img {
                         border-radius: 10px;
                         width: 100%;
-                        height: 413px;
+                        height: 226px;
                     }
                 }
             }
@@ -45,46 +45,19 @@
     }
 }
 
-//movie__cont
-.movie__cont {
+// Unsplash__Page
+.unsplash__cont {
 
     ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 2%;
+        column-count: 4;
 
         li {
-            width: 24%;
-            position: relative;
-
-            .title {
-                font-size: 20px;
-                padding: 3px 0;
-                display: inline-block;
-
-                &:hover {
-                    text-decoration: underline;
-                    text-underline-position: under;
-                }
-            }
-            .star {
-                position: absolute;
-                right: 20px;
-                top: 20px;
-                width: 30px;
-                height: 30px;
-                background-color: #fff;
-                text-align: center;
-                line-height: 30px;
-                border-radius: 50%;
-                font-size: 12px;
-
-            }
+            margin-bottom: 20px;
         }
     }
 }
-.movie__search {
+
+.unsplash__search {
     text-align: center;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -111,8 +84,7 @@
         }
     }
 }
-
-.movie__tag {
+.unsplash__tag {
 
     ul {
         display: flex;
@@ -122,21 +94,26 @@
         li {
 
             a {
-                border:1px solid #990df7;
+                border:1px solid #4857EC;
                 padding: 10px 20px;
                 margin: 0 10px;
-                color: #990df7;
+                color: #4857EC;
 
+                &:hover {
+                    color: #fff;
+                    background-color: #4857EC;
 
+                }
             }
         }
     }
 }
-.movie__slider {
+.unsplash__slider {
+
     width: 100%;
     a {
         img {
-            height: 450px;
+            height: 350px;
             width: 100%;
             object-fit: cover;
         }

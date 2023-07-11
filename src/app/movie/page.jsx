@@ -1,6 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import MovieCont from "./MovieCont";
 import style from "./page.module.scss"
+import ContTitle from "@/components/title/ContTitle";
 
 // export const metadata = {
 //   title: 'Movie API SITE',
@@ -14,7 +16,8 @@ const Movie = () => {
     const getData = async () => {
       const res = await fetch(
         "https://api.themoviedb.org/3/movie/popular?api_key=697729d3f274ce88cf5729d38280fd33"
-      );      if (!res.ok) {
+      );      
+      if (!res.ok) {
         throw new Error("Failed to fetch data");
       }
       const data = await res.json();
@@ -24,6 +27,11 @@ const Movie = () => {
   }, []);
   console.log(movies);
   
-  return <div className={style}>Movie</div>;
+  return (
+    <>
+      <ContTitle title="movie" />
+      <MovieCont movies={movies} />
+    </>
+  );
 };
 export default Movie;

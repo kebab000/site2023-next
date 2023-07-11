@@ -44,7 +44,7 @@ const Footer = () => {
                     <ul className="sns">
                         <li>
                             <Link href="/">
-                                <Image width="20" height='20' src="../assets/images/footer/footer01.svg" alt="페이스북" />
+                                <Image width={20} height={20} src="../assets/images/footer/footer01.svg" alt="페이스북" />
                             </Link>
                         </li>
                         <li>
