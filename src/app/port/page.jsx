@@ -1,9 +1,16 @@
+"use client";
+import ContTitle from '@/components/title/ContTitle'
 import React from 'react'
+import PortCont from './PortCont'
 
-const Port = () => {
+const PortPage = () => {
   return (
-    <div>Port</div>
+    <>
+      <ContTitle title='Portfolio'/>
+      {/* <PortSlider/> */}
+      <PortCont/>
+    </>
   )
 }
 
-export default Port
+export default PortPage

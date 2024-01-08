@@ -982,7 +982,7 @@ img {
     width: 230px;
 }
 .intro__title .myCharacter img {
-    left: 0;
+    left: -35px;
     position: absolute;
     top: 5px;
 }

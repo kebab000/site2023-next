@@ -11,7 +11,7 @@ const Intro = () => {
         <div className="intro__title">
             <span>Portfolio</span>
             <figure className="myCharacter">
-                <Image width= '230' height= '290' src="./assets/images/member/member107.svg" alt="나"/>
+                <Image width='230' height= '290' src="./assets/images/member/member106.svg" alt="나"/>
             </figure>
             <h3>포토폴리오<br/>
                 준비과정</h3>

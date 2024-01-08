@@ -9,7 +9,7 @@ const MovieItem = ({movie}) => {
           <Image width={400} height={218} src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
           <em>
             <span className= {style.title} >{movie.title}</span>
-            <span className={style.star}>{movie.vote_average}</span>
+            <span className={style.star}>{movie.vote_average.toFixed(1)}</span>
           </em>       
         </a>
       </li>

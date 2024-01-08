@@ -126,8 +126,10 @@
                 padding: 10px 20px;
                 margin: 0 10px;
                 color: #990df7;
-
-
+                &:hover {
+                    background-color: #990df7;
+                    color: #fff;
+                }
             }
         }
     }
