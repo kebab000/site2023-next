@@ -153,8 +153,8 @@ const ports = [
 ];
 const PortItem = port => {
     return (
-        <div className="port">
-            <figure className="port__header">
+        <div className={style.port}>
+            <figure className={style.port__header}>
                 <a href={port.port.url} target="_blank" rel="noreferrer">
                     <Image width={400} height={272}
                         src={`/assets/images/port/${port.port.portImg}`}
@@ -162,7 +162,7 @@ const PortItem = port => {
                     />
                 </a>
             </figure>
-            <div className="port__body">
+            <div className={style.port__body}>
                 <span>
                     <Image width={50} height={50}
                         src={`/assets/images/member/${port.port.profileImg}`}
@@ -180,17 +180,18 @@ const PortItem = port => {
 
 const PortCont = () => {
     return (
-        <section id="portCont" className="ports__item section center bg-blue">
+        // <div className={`${style.ports__item} + `}>
+        <div className={style.ports__item + " section center bg-blue"}>
             <h3>포트폴리오 소개</h3>
             <p>웹쓰 30기 포트폴리오 모음집입니다.</p>
-            <div className="port__inner container">
-                <div className={`port__cont container`}>
+            <div className={style.port__inner + " container"}>
+                <div className={style.port__cont + " container"}>
                     {ports.map((port, index) => (
                         <PortItem key={index} port={port} />
                     ))}
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 

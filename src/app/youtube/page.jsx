@@ -5,9 +5,6 @@ import YoutubeCont from "./YoutubeCont";
 import YoutubeSearch from "./YoutubeSearch";
 import YoutubeTag from "./YoutubeTag";
 
-// import YoutubeSearch from "@/components/youtube/YoutubeSearch";
-// import YoutubeTag from "@/components/youtube/YoutubeTag";
-
 
 const Youtube = () => {
   const [youtubes, setYoutubes] = useState([]);

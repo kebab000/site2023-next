@@ -1,0 +1,68 @@
+.ports__wrap > p {
+    margin-top: 10px;
+}
+.ports__wrap .port__inner .port__cont {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ports__wrap .port__inner .port__cont .port {
+    width: 32%;
+}
+.ports__wrap .port__inner .port__cont .port .port__header img {
+    border-radius: 10px;
+    height: 272px;
+}
+.ports__wrap .port__inner .port__cont .port .port__body {
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    position: relative;
+}
+.ports__wrap .port__inner .port__cont .port .port__body > span img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.ports__wrap .port__inner .port__cont .port .port__body:before {
+    background-color: #0f035d;
+    border-radius: 50%;
+    content: "";
+    height: 50px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 50px;
+    z-index: -999;
+}
+.ports__wrap .port__inner .port__cont .port .port__body > div {
+    margin-left: 10px;
+    text-align: left;
+}
+.ports__wrap .port__inner .port__cont .port .port__body > div h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+.ports__wrap .port__inner .port__cont .port .port__body > div p {
+    color: #2c3a4b;
+    font-size: 16px;
+}
+.ports__wrap .port__inner .port__cont .port:first-child .port__body:before {
+    background-color: #fa635c;
+}
+.ports__wrap .port__inner .port__cont .port:nth-child(2) .port__body:before {
+    background-color: #fee580;
+}
+.ports__wrap .port__inner .port__cont .port:nth-child(3) .port__body:before {
+    background-color: #d6d4ed;
+}
+.ports__wrap .port__inner .port__cont .port:nth-child(4) .port__body:before {
+    background-color: #f4d6ba;
+}
+.ports__wrap .port__inner .port__cont .port:nth-child(5) .port__body:before {
+    background-color: #b2b764;
+}
+.ports__wrap .port__inner .port__cont .port:nth-child(6) .port__body:before {
+    background-color: #837673;
+}
